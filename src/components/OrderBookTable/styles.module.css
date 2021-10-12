@@ -1,0 +1,74 @@
+.bidTable {
+    grid-area: bid;
+    position: relative;
+    max-height: 100%;
+    overflow: auto;
+}
+
+.askTable {
+    grid-area: ask;
+    position: relative;
+    max-height: 100%;
+    overflow: auto;
+}
+
+.tableHeader {
+    background: #1a1a1a;
+    border-top: 1px solid #444444;
+    border-bottom: 1px solid #333333;
+    color: #888888;
+    font-size: .8rem;
+    font-weight: 700;
+    padding: .5rem 0;
+    text-transform: uppercase;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.tableTitle {
+    text-align: center;
+    flex: 0 0 30%;
+    font-size: .8rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    padding: .25rem 0;
+    letter-spacing: .5px;
+}
+
+.row {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+  
+.item {
+    text-align: center;
+    flex: 0 0 30%;
+    font-size: .8rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    padding: .25rem 0;
+}
+  
+.bidPrice {
+    color: #00A36C;
+}
+  
+.askPrice {
+    color: #EE4B2B;
+}
+
+.bid {
+    flex-direction: row-reverse;
+}
+
+@media only screen and (max-width: 600px) {
+    .bidTable {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .bid {
+        flex-direction: row;
+    }
+}
