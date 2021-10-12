@@ -2,8 +2,8 @@
 
 This is an experimental project to built a cryptocurrency orderbook. An orderbook is a list of all outstanding bids and asks, along with their respective prices and sizes. 
 
-The app connects to a third party websocket that provides up-to-date orderbook data for a range of cryptocurrencies. See details:
-[https://support.cryptofacilities.com/hc/en-us/articles/360000538773-Book]https://support.cryptofacilities.com/hc/en-us/articles/360000538773-Book
+The app connects to a third party websocket that provides up-to-date orderbook data for a range of cryptocurrencies. See details:\
+[https://support.cryptofacilities.com/hc/en-us/articles/360000538773-Book](https://support.cryptofacilities.com/hc/en-us/articles/360000538773-Book)
 
 The speed and volume of data that comes through the websocket is very large and risks overwhelming React's ability to rapidly and correctly re-render the orderbook. So the app leverages a web worker to open and manage the websocket. The web worker receives messages and data from the websocket, and periodically sends a prepared and updated orderbook back to React for rendering.
 
